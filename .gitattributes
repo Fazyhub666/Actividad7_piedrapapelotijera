@@ -1,0 +1,13 @@
+# Detectar automáticamente archivos de texto y normalizarlos a LF
+* text=auto
+
+# Forzar finales de línea específicos para ciertos tipos de archivo
+*.sh text eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Evitar que Git modifique archivos binarios
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary
